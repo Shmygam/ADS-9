@@ -3,7 +3,7 @@
 #define INCLUDE_BST_H_
 template <typename T>
 class BST {
-  private:
+ private:
     struct Node {
         int count;
         T value;
@@ -38,8 +38,7 @@ class BST {
         int right = depth(first->right);
         if (left > right) {
             return left + 1;
-        }
-        else {
+        } else {
             return right + 1;
         }
     }
@@ -59,7 +58,7 @@ class BST {
         }
     }
 
-public:
+ public:
     BST() {
         first = nullptr;
     }
